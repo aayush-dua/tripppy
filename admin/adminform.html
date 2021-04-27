@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="adminform.css" rel="stylesheet">
+    <title>Location Master</title>
+</head>
+<body>
+    <main>
+    <nav>
+        <div class="logo">
+            <img src="images/travel_logo.svg">
+        </div>
+    </nav>
+    <form>
+        <h1>Location Details</h1>
+        <div class="form1">
+                <div class="info">
+                    <label>Location</label><input type = "text" placeholder="Location">
+                </div>
+                <div class="info">
+                    <label>File for Location</label><input type="file">
+                </div>
+                <div class="info">
+                    <label>Country</label><select id="Country" name="Country">
+                        <option value="India">India</option>
+                    </select>
+                </div>
+                <div class="info">
+                    <textarea name="description" id="desc" cols="20" rows="5" placeholder="Location Description"></textarea>
+                </div>
+                
+        </div>
+        <button type="submit" class="submit">Add Location</button>
+    </form>
+    <br>
+
+    <h1>Hotel Details</h1>
+        <div class="form2">
+                <div class="info">
+                    <label>Hotel Name</label><input type = "text" placeholder="Location">
+                </div>
+                <div class="info">
+                    <label>Location</label><select id="Location" name="Location">
+                        <option value="Kodaikanal">Kodaikanal</option>
+                    </select>
+                </div>
+                <div class="info">
+                    <label>Price Range</label><select id="price" name="price">
+                        <option value="$$$">$$$</option>
+                    </select>
+                </div>
+                <div class="info">
+                    <label>Address</label><input type = "text" placeholder="hotel address">
+                </div>
+                <div class="info">
+                    <label>Phone Number</label><input type = "number" placeholder="phone number">
+                </div>
+        </div>
+        <button type="submit" class="submit">Add Hotel</button>
+    </form>
+</main>
+</body>
+</html>

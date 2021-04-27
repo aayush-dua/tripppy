@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+.first_color{
+  background-color: #ff896b;
+}
+.second_color{
+  background-color: #e8d4b4;
+}
+.third_color{
+  background-color: #ebe6e6;
+}
+.fourth_color{
+  background-color: #f3f3f3;
+}
+div{
+  padding: 0%;
+}
+/*
+.first_color{
+  background-color: #deb881;
+}
+.second_color{
+  background-color: #f6cd90;
+}
+.third_color{
+  background-color: #eadea6;
+}
+.fourth_color{
+  background-color: #efe9cc;
+}
+.first_color{
+  background-color: #112d4e;
+}
+.second_color{
+  background-color: #3f72af;
+}
+.third_color{
+  background-color: #dbe2ef;
+}
+.fourth_color{
+  background-color: #f9f7f7;
+}*/
+#screen_table{
+  height: 450px;
+  max-height: 450px;
+  overflow: scroll;
+}
+button{
+  margin-top:0px;
+}
+span{
+  display:block;
+  overflow: hidden;
+  padding:0 4px 0 6px;
+}
+input{
+  width:100%;
+  border:none;
+  margin: 5px 0;
+}
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #442727;
+}
+.add_screen_row{
+  margin-right: 20px;
+}
+#button_field{
+  position: fixed;
+  width: 100%;
+}
+#new_screen_div{
+  display: none;
+  float: right;
+  height: 450px;
+  max-height: 450px;
+  overflow: scroll;
+}
+#fields_from_ajax{
+  display: none;
+  float: right;
+  height: 450px;
+  max-height: 450px;
+  width: 35%;
+  overflow: scroll;
+}
+#new_user_form{
+  display: none;
+  float: right;
+  height: 450px;
+  max-height: 450px;
+  width: 40%;
+  overflow: scroll;
+}
+#add_screen_heading{
+  display: none;
+  padding: 7px;
+}
+#make_changes_button{
+  display: none;
+}
+#assign_screens_button{
+  position: sticky;
+  bottom: 0;
+  padding: 5px;
+}
+#get_screen_name{
+  background-color: #af460f;
+}
+.topright {
+  position:inherit;
+  top: 0;
+  right: 0;
+}
+thead {
+  position: sticky;
+  top: 0;
+}

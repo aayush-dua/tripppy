@@ -1,0 +1,355 @@
+
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background_home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gradient{
+    /* padding: 30px; */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+.link{
+    text-decoration: none;
+
+    color:inherit;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 30px;
+    width:92%;
+    height:99%;
+    margin:  0 auto;
+    background-color: transparent;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,0.6));
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    padding:10px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+.back{
+    width: 33%;
+    color: #5BFE86;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+
+.username{
+    position: relative;
+    align-items:center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    font-weight: 700;
+    color: white;
+    width:33%
+}
+.logout{
+    display: none;
+    padding: 10px 20px;
+    width: 120px;
+    height: 40px;
+    background-color: #5BFE86;
+    position: absolute;
+    color: black;
+    top:30px;
+    text-align: center;
+}
+.username:hover .logout{
+        display:inline-block;
+}
+.logout a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.nav img{
+    margin: 0 auto;;
+}
+.panes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.left_pane{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+
+    /* background-color: rgba(0,0,0,.6) */
+}
+.spacing{
+    width: 100%;
+    height: 200px;
+
+}
+#left_content{
+    width: 100%;
+    height: 80%;
+    border-radius: 0 0 0 30px;
+    transition: transform 0.6s ease;
+}
+#left_content h1{
+    display: block;
+    padding:20px;
+    padding-left: 50px;
+    color: white;
+    font-size: 3rem;
+}
+#left_content p{
+    width: 80%;
+
+    word-wrap: normal;
+    color: white;
+    padding:20px;
+    padding-left: 50px;
+    transition: transform 0.6s ease;
+}
+#exp_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border:2px solid #5BFE86;
+    color: #5BFE86;
+    margin-left: 50px;
+    background: transparent;
+
+}
+.exp_cards{
+    margin-top: 10px;
+    width: 90%;
+    display:none;
+    height: 300px;
+    transition: transform 0.6s ease;
+    margin-left: 50px;
+}
+.column{
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 100px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 700;
+    vertical-align: middle;
+}
+.c1{
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4)),url(images/Mask\ Group\ 1.png);
+  background-size:cover ;
+}
+.c2{
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.4)),url(images/bg.jpg);
+  background-size: cover;
+
+}
+.c3{
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.4)),url(images/bg2.jpg);
+  background-size: cover;
+}
+.c4{
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.4)),url(images/bg3.jpg);
+  background-size: cover;
+}
+.row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .row {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+  }
+.row{
+    overflow-x: scroll;
+
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+.right_pane{
+    width: 50%;
+    display: flex;
+    padding:100px 50px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.hotel_cards{
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    border: 4px solid #5BFE86 ;
+    align-items: center;
+    padding: 10px;
+}
+.hotel_cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hotel_cards {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+  }
+
+.hotel_nav{
+    display: flex;
+    flex-direction: row;
+}
+.filter{
+    display: flex;
+    flex-direction: row;
+}
+.hotel_nav h1{
+    padding-bottom: 50px;
+    width: 70%;
+    color: white;
+    font-size: 2rem;
+}
+.hotel_nav select{
+    border-radius: 10px;
+    border: 2px solid #5BFE86;
+    background: transparent;
+    color: #5BFE86;
+    width: 100px;
+    height:30px;
+    margin-top: 5px;
+}
+.hotel_nav option{
+    background: black;
+}
+.hotel_nav label{
+    color:#5BFE86 ;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.hotel_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background: #5BFE86;
+}
+.hotel_image img {
+    height: 100%;
+    width: 100%;
+}
+.hotel_content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+.hotel_desc{
+    padding-top: 10px;
+    padding-left:20px;
+    color: white;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+.hotel_name{
+    padding-top:10px;
+    padding-left:20px;
+    color: white;
+}
+.hotel_add{
+    padding-top: 10px;
+    padding-left:20px;
+    color: white;
+}
+.top{
+    display: flex;
+    align-items: flex-end;
+}
+.top i{
+    color:#5BFE86;
+    padding-bottom: 5px;
+}
+.star_rating{
+    padding-left: 180px;
+}
+h5{
+    font-size: 0.9rem;
+}
+.phone{
+    padding-top: 10px;
+    padding-left:20px;
+    color: white;
+}
+.hotel_footer{
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.features{
+    padding:20px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.price{
+    padding:15px;
+    margin-top: 10px;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: right;
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 50%;
+    color: white;
+}
+.feat{
+    align-items: flex-start;
+    text-align: left;
+    font-weight: 300;
+    color:#5BFE86;
+}

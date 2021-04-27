@@ -1,0 +1,157 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background:url(images/background_home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gradient{
+    /* padding: 30px; */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+section{
+    padding: 30px;
+    width:90%;
+    height: inherit;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+}
+.logo{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.sub_signin{
+    width: 100%;
+    margin-top: 10%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.signin{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.signup{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.vertical{
+    top:25%;
+    position: absolute;
+    left: 50%;
+    height: 400px;
+    width: 1px;
+    border-radius: 2px;
+    background-color: white;
+}
+.sign_sections{
+    padding: 10px;
+    justify-content: center;
+}
+.header{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+input{
+    display:block;
+    margin:0 auto;
+}
+
+.text{
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border:2px solid #5BFE86;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0,0.0);
+    color: white;
+    font-size: 18px;
+}
+.submit{
+    font-weight: 700;
+    margin-top: 30px;
+    background-color: #5BFE86;
+    color: black;
+}
+.submit:hover{
+    background-color: white;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #5BFE86;
+    text-align: center;
+  }
+::-moz-placeholder { /* Firefox 19+ */
+    color: #5BFE86;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1300px){
+    section{
+    width: 100%;
+    
+    padding: 10px;
+    padding-top: 30px;
+    }
+   
+    .main{
+        height: 110vh;
+    }
+    .gradient{
+        height: 110vh;
+    }
+    .sub_signin{
+        flex-direction: column;
+    }
+    .vertical{
+        display: none;
+    }
+    .text{
+        padding:0 50px;
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+    }
+    .submit{
+        margin-top: 10px;
+    }
+    .signup{
+       
+        margin-top: 8%;
+        width: 100%;
+    }
+    .header{
+        font-size: 1.6em;
+        margin-bottom: 0;
+    }
+    .signin{
+        
+        width: 100%;
+    }
+}
